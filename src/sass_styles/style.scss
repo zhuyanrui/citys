@@ -3,6 +3,46 @@
 .wrap {
     width: 100%;
     height: 100%;
-    background: #ccc;
     overflow: hidden;
+}
+
+.list {
+    width: 100%;
+    h2 {
+        width: 100%;
+        height: pxTorem(50px);
+        background: #eee;
+        font-size: pxTorem(18px);
+        @include box_flex;
+        @include align;
+    }
+    ul {
+        width: 100%;
+        li {
+            height: pxTorem(50px);
+            font-size: pxTorem(16px);
+            border-bottom: 2px solid #ccc;
+            line-height: pxTorem(50px);
+        }
+    }
+}
+
+.city {
+    width: pxTorem(30px);
+    background: #ccc;
+    position: fixed;
+    right: pxTorem(10px);
+    top: pxTorem(50px);
+    ul {
+        width: pxTorem(30px);
+        li {
+            width: pxTorem(30px);
+            height: pxTorem(25px);
+            border: 1px solid #ccc;
+            text-align: center;
+            line-height: pxTorem(25px);
+            cursor: pointer;
+            font-size: pxTorem(15px);
+        }
+    }
 }
